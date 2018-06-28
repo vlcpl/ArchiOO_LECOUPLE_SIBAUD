@@ -16,7 +16,7 @@ public class Observer {
 	}
 	
 	public void update(String message) {
-		System.out.println(message + " IN OBSERVER");
+		System.out.println("VALUE: " + message + " IN OBSERVER");
 		for(AbstractView v : this.viewsList) {
 			System.out.println(v.toString());
 			System.out.println("GLOBAL IS: " + v.getController());

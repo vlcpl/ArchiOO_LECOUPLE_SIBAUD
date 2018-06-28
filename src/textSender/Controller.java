@@ -10,7 +10,7 @@ public class Controller {
 	}
 	
 	public static void update(String message) {
-		System.out.println(message + " IN CONTROLLER");
+		System.out.println("VALUE: " + message + " IN CONTROLLER");
 		obs.update(message);
 	}
 	
