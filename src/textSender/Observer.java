@@ -34,7 +34,7 @@ public class Observer {
      */
 	public void update(final String message) {
 		for(AbstractView v : this.viewsList) {
-			((AbstractView) v.getController()).setText(message);
+			v.getController().setText(message);
 		}
 	}
 

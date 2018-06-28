@@ -9,7 +9,7 @@ public class App extends Application{
      * Launch instances of views.
      *
      * @param primaryStage an instance of Stage
-     * @throws Exception if an Exception occure during runtime
+     * @throws Exception if an Exception occurs during runtime
      */
 	public void start(final Stage primaryStage) throws Exception {
 

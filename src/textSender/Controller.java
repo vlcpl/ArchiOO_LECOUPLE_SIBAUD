@@ -21,7 +21,7 @@ public class Controller {
 	/**
 	 * Up to date the Observer's views.
 	 *
-	 * @param message a meaningfull message
+	 * @param message a meaningful message
 	 */
 	public static void update(final String message) {
 		obs.update(message);
@@ -30,7 +30,7 @@ public class Controller {
 	/**
 	 * Launch all the views.
 	 *
-	 * @throws IOException during runtime if an error occure
+	 * @throws IOException during runtime if an error occurs
 	 */
 	public static void launchViews() throws IOException {
 		obs.loadViews();
