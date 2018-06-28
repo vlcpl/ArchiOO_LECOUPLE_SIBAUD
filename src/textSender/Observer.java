@@ -19,7 +19,8 @@ public class Observer {
 		System.out.println(message + " IN OBSERVER");
 		for(AbstractView v : this.viewsList) {
 			System.out.println(v.toString());
-			v.setText(message);
+			System.out.println("GLOBAL IS: " + v.getController());
+			((AbstractView) v.getController()).setText(message);
 		}
 	}
 	

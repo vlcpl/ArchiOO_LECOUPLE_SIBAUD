@@ -13,7 +13,7 @@ public class ViewReceiveText extends AbstractView{
 	
 	@FXML
 	private TextField txtFldAff;
-	private Object globalViewCt;
+	private ViewReceiveText globalViewCt;
 
 	@Override
 	public void setText(String msg) {
@@ -25,15 +25,15 @@ public class ViewReceiveText extends AbstractView{
 	public void loadView() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("affichage.fxml"));
-		this.globalViewCt = loader.getController();
 		Parent window2 = loader.load();
+		this.globalViewCt = loader.getController();
 		Stage stage = new Stage();
 		stage.setScene(new Scene(window2));
 		stage.show();	
 	}
 
 	@Override
-	public Object getController() {
+	public ViewReceiveText getController() {
 		return this.globalViewCt;
 	}
 	

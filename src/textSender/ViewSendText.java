@@ -14,7 +14,7 @@ public class ViewSendText extends AbstractView{
 	
 	@FXML
 	private TextField txtFld;
-	private Object globalViewCt;
+	private ViewSendText globalViewCt;
 		
 	@FXML
 	public void sendText(ActionEvent event) {
@@ -31,15 +31,15 @@ public class ViewSendText extends AbstractView{
 	public void loadView() throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("sendPage.fxml"));
-		this.globalViewCt = loader.getController();
 		Parent window1 = loader.load();
+		this.globalViewCt = loader.getController();
 		Stage stage = new Stage();
 		stage.setScene(new Scene(window1));
 		stage.show();
 	}
 
 	@Override
-	public Object getController() {
+	public ViewSendText getController() {
 		return this.globalViewCt;
 	}
 }
