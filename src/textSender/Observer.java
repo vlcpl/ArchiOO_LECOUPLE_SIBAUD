@@ -5,28 +5,46 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Observer {
+    /**
+     * List of AbstractView.
+     */
 	private List<AbstractView> viewsList;
-	
-	public Observer() {
+
+    /**
+     * Default Constructor.
+     */
+	Observer() {
 		this.viewsList = new ArrayList<AbstractView>();
 	}
-	
-	public void addView(AbstractView av) {
+
+    /**
+     * Add an AbstractView to private list.
+     *
+     * @param av an AbstractView
+     */
+	public void addView(final AbstractView av) {
 		this.viewsList.add(av);
 	}
-	
-	public void update(String message) {
-		System.out.println("VALUE: " + message + " IN OBSERVER");
+
+    /**
+     * Up to date the AbstractView contained in viewsList.
+     * Set a message to the AbstractView.
+     *
+     * @param message an meaningfull message
+     */
+	public void update(final String message) {
 		for(AbstractView v : this.viewsList) {
-			System.out.println(v.toString());
-			System.out.println("GLOBAL IS: " + v.getController());
 			((AbstractView) v.getController()).setText(message);
 		}
 	}
-	
+
+    /**
+     * Load all the AbstractView from viewsList.
+     *
+     * @throws IOException if the AbstractView f*** up
+     */
 	public void loadViews() throws IOException {
 		for(AbstractView v : this.viewsList) {
-			System.out.println(v.toString());
 			v.loadView();
 		}
 	}

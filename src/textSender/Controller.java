@@ -3,17 +3,35 @@ package textSender;
 import java.io.IOException;
 
 public class Controller {
+	/**
+	 * Injection of an instance of Observer.
+	 */
 	private static Observer obs = new Observer();
-	
-	public static void addView(AbstractView avCesar) {
+
+	/**
+	 * Add an AbstractView to Observer's list.
+	 *
+	 * @param avCesar an AbstractView
+	 */
+	public static void addView(final AbstractView avCesar)
+    {
 		obs.addView(avCesar);
 	}
-	
-	public static void update(String message) {
-		System.out.println("VALUE: " + message + " IN CONTROLLER");
+
+	/**
+	 * Up to date the Observer's views.
+	 *
+	 * @param message a meaningfull message
+	 */
+	public static void update(final String message) {
 		obs.update(message);
 	}
-	
+
+	/**
+	 * Launch all the views.
+	 *
+	 * @throws IOException during runtime if an error occure
+	 */
 	public static void launchViews() throws IOException {
 		obs.loadViews();
 	}

@@ -23,7 +23,7 @@ public class ViewSendText extends AbstractView{
 	}
 	
 	@Override
-	public void setText(String msg) {
+	public void setText(final String msg) {
 		this.message = msg;
 	}
 
@@ -34,6 +34,7 @@ public class ViewSendText extends AbstractView{
 		Parent window1 = loader.load();
 		this.globalViewCt = loader.getController();
 		Stage stage = new Stage();
+		stage.setTitle("SERVEUR");
 		stage.setScene(new Scene(window1));
 		stage.show();
 	}

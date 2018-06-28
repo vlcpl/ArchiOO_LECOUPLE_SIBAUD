@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.ViewSendText">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.ViewSendText">
    <children>
-      <Button fx:id="btnSend" layoutX="357.0" layoutY="340.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="137.0" text="Send" onAction="#sendText" />
-      <TextField fx:id="txtFld" layoutX="185.0" layoutY="218.0" prefHeight="31.0" prefWidth="481.0" />
+      <Button fx:id="btnSend" layoutX="514.0" layoutY="267.0" mnemonicParsing="false" onAction="#sendText" prefHeight="31.0" prefWidth="152.0" text="Envoyer le message" />
+      <TextField fx:id="txtFld" layoutX="185.0" layoutY="218.0" prefHeight="31.0" prefWidth="481.0" promptText="Ecrire un message.." />
+      <Label layoutX="185.0" layoutY="195.0" text="Ecrivez un message puis cliquez sur &quot;envoyer le message&quot;" />
    </children>
 </Pane>
