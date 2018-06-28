@@ -1,5 +1,6 @@
 package textSender;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,13 @@ public class Observer {
 		for(AbstractView v : this.viewsList) {
 			System.out.println(v.toString());
 			v.setText(message);
+		}
+	}
+	
+	public void loadViews() throws IOException {
+		for(AbstractView v : this.viewsList) {
+			System.out.println(v.toString());
+			v.loadView();
 		}
 	}
 }

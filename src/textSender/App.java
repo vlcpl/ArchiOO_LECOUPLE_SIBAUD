@@ -13,13 +13,15 @@ public class App extends Application{
 		ViewSendText vst = new ViewSendText();
 		Controller.addView(vrt);
 		Controller.addView(vst);
-		Parent window1 = FXMLLoader.load(getClass().getResource("sendPage.fxml"));
-		Parent window2 = FXMLLoader.load(getClass().getResource("affichage.fxml"));
-		primaryStage.setScene(new Scene(window1));
-		primaryStage.show();
-		Stage st2 = new Stage();
-		st2.setScene(new Scene(window2));
-		st2.show();
+//		Parent window1 = FXMLLoader.load(getClass().getResource("sendPage.fxml"));
+//		Parent window2 = FXMLLoader.load(getClass().getResource("affichage.fxml"));
+//		primaryStage.setScene(new Scene(window1));
+//		primaryStage.show();
+//		Stage st2 = new Stage();
+//		st2.setScene(new Scene(window2));
+//		st2.show();
+		
+		Controller.launchViews();
 	}
 
 	public static void main(String[] args) {
