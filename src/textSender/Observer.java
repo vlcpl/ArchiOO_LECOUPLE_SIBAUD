@@ -30,7 +30,7 @@ public class Observer {
      * Up to date the AbstractView contained in viewsList.
      * Set a message to the AbstractView.
      *
-     * @param message an meaningfull message
+     * @param message a meaningful message
      */
 	public void update(final String message) {
 		for(AbstractView v : this.viewsList) {
