@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.ViewSendText">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.views.ViewSendText">
    <children>
       <Button fx:id="btnSend" layoutX="514.0" layoutY="267.0" mnemonicParsing="false" onAction="#sendText" prefHeight="31.0" prefWidth="152.0" text="Envoyer le message" />
       <TextField fx:id="txtFld" layoutX="185.0" layoutY="218.0" prefHeight="31.0" prefWidth="481.0" promptText="Ecrire un message.." />

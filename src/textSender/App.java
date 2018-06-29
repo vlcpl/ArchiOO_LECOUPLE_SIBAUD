@@ -2,6 +2,9 @@ package textSender;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import textSender.controller.Controller;
+import textSender.views.ViewReceiveText;
+import textSender.views.ViewSendText;
 
 public class App extends Application{
 

@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.ViewReceiveText">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textSender.views.ViewReceiveText">
    <children>
 		<TextField fx:id="txtFldAff" layoutX="185.0" layoutY="218.0" prefHeight="31.0" prefWidth="481.0" promptText="En attente d'un message.." />
       <Label layoutX="185.0" layoutY="193.0" text="Le message diffusé :" textFill="#571616" underline="true" />
